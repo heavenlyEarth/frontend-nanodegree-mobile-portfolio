@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <link rel="stylesheet" href="css/style.css">
+ <!-- <link rel="stylesheet" href="css/style.css"> -->
   <link rel="stylesheet" href="css/bootstrap-grid.css">
 </head>
 
@@ -102,11 +102,11 @@
           </div>
         </div>
         <div id="randomPizzas" class="row">
-          <div id="pizza0" class="randomPizzaContainer" style="width:33.33%; height: 325px;">
-            <div style="width:35%">
+          <div id="pizza0" class="randomPizzaContainer" style="width:33.33%;">
+            <div class="col-md-6">
               <img src="images/pizza.png" class="img-responsive">
             </div>
-            <div style="width:65%">
+            <div class="col-md-6">
               <h4>The Udacity Special</h4>
               <ul>
                 <li>Turkey</li>
@@ -119,11 +119,11 @@
               </ul>
             </div>
           </div>
-          <div id="pizza1" class="randomPizzaContainer" style="width:33.33%; height: 325px;">
-            <div style="width:35%">
+          <div id="pizza1" class="randomPizzaContainer" style="width:33.33%;">
+            <div class="col-md-6">
               <img src="images/pizza.png" class="img-responsive">
             </div>
-            <div style="width:65%">
+            <div class="col-md-6">
               <h4>The Cameron Special</h4>
               <ul>
                 <li>Chicken</li>
@@ -137,8 +137,23 @@
     </div>
     <div id="footer" class="col-md-12">Thanks for visiting! &copy; 2014 Udacity</div>
   </div>
+     <noscript id="deferred-styles">
+      <link rel="stylesheet" type="text/css" href="style.css"/>
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window
+        </script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 
-</html>
 </html>
