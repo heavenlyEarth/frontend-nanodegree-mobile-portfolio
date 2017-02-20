@@ -519,7 +519,7 @@ for (var x = 0; x < 5; x++) {
 for (var y = 0; y < pizazz.length; y++) {
   pizazz[y].style.left = pizazz[y].basicLeft + 100 * phase[y % 5] + 'px';
   }
-};
+
 
 
 
@@ -536,6 +536,7 @@ for (var y = 0; y < pizazz.length; y++) {
     var timesToUpdatePosition = window.performance.getEntriesByName("measure_frame_duration");
     logAverageFrame(timesToUpdatePosition);
   }
+};
 
 
 // runs updatePositions on scroll
