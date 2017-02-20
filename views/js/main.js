@@ -507,12 +507,12 @@ function updatePositions() {
 var phase = [];
 
 for (var x = 0; x < 5; x++) {
-  phase.push(Math.sin((document.body.scrollTop / 1250) + x));
-  }
+        phase.push(Math.sin((document.body.scrollTop / 1250) + x));
+    }
 
 for (var y = 0; y < items.length; y++) {
-  items[y].style.left = items[y].basicLeft + 100 * phase[y % 5] + 'px';
-  }
+    items[y].style.left = items[y].basicLeft + 100 * phase[y % 5] + 'px';
+        }
 };
 
 
