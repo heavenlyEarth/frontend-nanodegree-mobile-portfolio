@@ -504,7 +504,7 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 
 
 
-var pizazz = document.querySelectorAll('.mover');
+var pizazz = document.getElementsByClassName('mover');
 
 function updatePositions() {
   frame++;
