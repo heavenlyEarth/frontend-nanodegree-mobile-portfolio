@@ -452,9 +452,9 @@ var resizePizzas = function(size) {
 
 
   function changePizzaSizes(size) {
+    var dx = determineDx(pizzaContainers[i], size);
+    var newwidth = (pizzaContainers[i].offsetWidth + dx) + 'px';
     for (var i = 0; i < pizzaContainers.length; i++) {
-      var dx = determineDx(pizzaContainers[i], size);
-      var newwidth = (pizzaContainers[i].offsetWidth + dx) + 'px';
       pizzaContainers[i].style.width = newwidth;
     }
   }
