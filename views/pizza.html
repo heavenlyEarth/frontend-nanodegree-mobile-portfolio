@@ -1,65 +1,66 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<!--  <link rel="stylesheet" href="css/bootstrap-grid.css" media="none">-->
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
 
-  <style>
-    /** {
-    outline: 1px solid red !important;
-  }*/
-    * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -box-sizing: border-box;
-  }
+    <style>
+      /** {
+      outline: 1px solid red !important;
+    }*/
+      * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -box-sizing: border-box;
+    }
 
-    body {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    background: black;
-  }
+      body {
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      background: black;
+    }
 
-    input {
-    background: grey;
-    font-size: 18px;
-  }
+      input {
+      background: grey;
+      font-size: 18px;
+    }
 
-    form {
-    display: inline-block;
-  }
+      form {
+      display: inline-block;
+    }
 
-    .centered {
-    text-align: center;
-  }
+      .centered {
+      text-align: center;
+    }
 
-    #pizzaSize {
-    font-weight: 800;
-  }
+      #pizzaSize {
+      font-weight: 800;
+    }
 
-    .mover {
-    position: fixed;
-    width: 256px;
-    z-index: -1;
-  }
+      .mover {
+      position: fixed;
+      width: 256px;
+      z-index: -1;
+    }
 
-    .randomPizzaContainer {
-    float: left;
-    display: flex;
-  }
+      .randomPizzaContainer {
+      float: left;
+      display: flex;
+    }
 
-    .randomPizzaContainer:after {
-    content: "";
-    display: table;
-    clear:both;
-  }
+      .randomPizzaContainer:after {
+      content: "";
+      display: table;
+      clear:both;
+    }
 
-    .container {
-    background-color: rgba(240, 60, 60, 0.8);
-  }
-  </style>
+      .container {
+      background-color: rgba(240, 60, 60, 0.8);
+    }
+    </style>
 
 </head>
 
 <body>
+
   <div class="container">
     <div id="header" class="row">
       <div class="col-md-6">
@@ -201,6 +202,7 @@
 
   <script type="text/javascript" src="js/main.js"></script>
 
+<!--
     <noscript id="deferred-styles">
       <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css"/>
     </noscript>
@@ -217,6 +219,10 @@
       if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
       else window.addEventListener('load', loadDeferredStyles);
     </script>
+=======
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  -->
+
 </body>
 
 </html>
