@@ -1,28 +1,11 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<link rel=stylesheet href=css/bootstrap-grid.css>
 <style>*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-box-sizing:border-box}body{font-family:"Trebuchet MS",Helvetica,sans-serif;background:black}input{background:grey;font-size:18px}form{display:inline-block}.centered{text-align:center}#pizzaSize{font-weight:800}.mover{position:fixed;width:256px;z-index:-1}.randomPizzaContainer{float:left;display:flex}.randomPizzaContainer:after{content:"";display:table;clear:both}.container{background-color:rgba(240,60,60,0.8)}</style>
 </head>
 <body>
-    <noscript id="deferred-styles">
-      <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css"/>
-    </noscript>
-    <script>
-      var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById("deferred-styles");
-        var replacement = document.createElement("div");
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement)
-        addStylesNode.parentElement.removeChild(addStylesNode);
-      };
-      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-          webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-      else window.addEventListener('load', loadDeferredStyles);
-    </script>
-
 <script type=text/javascript src=js/main.js></script>
-
 <div class=container>
 <div id=header class=row>
 <div class=col-md-6>
