@@ -109,7 +109,7 @@ hr {
 .col-md-9,
 .col-md-10,
 .col-md-11,
-.col-md-12,{
+.col-md-12 {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
